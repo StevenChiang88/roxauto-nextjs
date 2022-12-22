@@ -1,0 +1,135 @@
+{ 
+    "generalButton":{
+        "Contact":"Contact Us",
+        "Products":"Go to Products"
+    },
+
+    "navBar":{
+        "Home":"Home",
+        "Brands":"Brands",
+        "Products":"Products",
+        "Contact":"Contact"
+    },
+
+    "HomePage":{
+        "BannerTitle1":"Leading Manufacturer & Exporter of",
+        "BannerTitle2":"Taiwan Automotive Parts",
+        "BannerText1":"ROX CORP. has been engaged in the automobile spare parts business since 1976 and has proven itself to be one of the best in Taiwan in this industry.",
+        "BannerText3":"Sourcing all over Taiwan, building up strong relationship with factories, exporting high dependable quality products worldwide, we ROX CORP.is a experienced and reliable partner in your Auto Parts Business"
+    },
+    "ContactBox":{
+        "Title":"We provides Auto Parts from Taiwan manufacturers",
+        "Text":"Please feel free to contact us for more information.",
+        "Button":"Contact Us"
+    },
+    "BrandsBox":{
+        "BrandsTitle":"We supply all brands of Taiwan manufacturers",
+        "BrandsText":"We provides auto parts from manufacturers all over Taiwan , please feel free to contact us for more details.",
+        "SASAKI":"High quality electrical parts",
+        "TOKAI":"High Performance brake parts",
+        "NISHIOKA":"Durable suspension parts",
+        "Taiwan":"Sourcing all specific branded parts for our customers"
+    },
+    "About":{
+        "AboutTitle":"About us",
+        "AboutText1":"We continuously endeavor to source wide range of high quality Automotive Parts, providing fair price and ultimate benefits to the customers through value creation and mutual trust.",
+        "AboutText2":"Constantly supplying automobile spare parts to countries in Latin American, Europe, Middle East and South East Asia market, and participating in overseas exhibitions to meet customers for better communication.",
+        "AboutBoxTitle1":"Made In Taiwan",
+        "AboutBoxTitle2":"Only Quality Oriented",
+        "AboutBoxTitle3":"Best Price",
+        "AboutBoxTitle4":"Customer care is our priority",
+        "AboutBoxText1":"We guarantee supplying auto parts which are 100% made in Taiwan.",
+        "AboutBoxText2":"Our auto parts are all manufactured under strict standards that enable high performance and durability.",
+        "AboutBoxText3":"With more than 45 years of experiences, our good relationship with the top manufacturers that has allowed us to provide comprehensive auto parts and competitive prices.",
+        "AboutBoxText4":"We believe that trusting relationships are built through sincerity, honesty and communication. Customers’ feedback will always be our working guideline."
+    },
+    "ContactPage":{
+        "ContactBannerTitle":"Contact Us",
+        "ContactBannerText":"Looking for better source of spare parts?",
+        "ContactTitle":"QUOTATION REQUEST",
+        "ContactSubTitle":"Auto Parts for Wholesalers or Importers",
+        "ContactText1":"Please fill out the following form  with your detailed contact information and brief message. For more efficient service, we require:",
+        "ContactText2":"- Inquiry please indicate purchase Quantity and OEM numbers or Factories’ numbers of parts",
+        "ContactText3":"- Indication of preferable brands of Taiwan are necessary.",
+        "ContactForm1":"Nation & Company Name",
+        "ContactForm2":"Email",
+        "ContactForm3":"Contact Person",
+        "ContactForm4":"Phone or WhatsAPP",
+        "ContactForm5":"message",
+        "ContactForm6":"submit"
+    },
+    "BrandsPage":{
+        "BannerTitle":"Our Brands",
+        "BannerText":"Quality Guaranteed",
+        "SASAKIText":"Specialised in switches manufacturing. The brand mainly develops, produces and sells automobile switches for steering system, door system, ignition system, and lighting system. We also provides sensors and other electronic components for automotive industry.",
+        "TOKAIText":"Providing high-quality hydraulic Brake & Clutch Cyl. Assy. & Repair Kits ,Engine Timing kit parts and Oil seals. For more than 2 decades, products manufacture based upon the JIS standard and OEM specification, insisted on all vital parts are 100% made in Taiwan to enable dependable and constant high performance.",
+        "NISHIOKAText":"Dealing in suspensions, steering and other key parts that impact automotive performance. Following OEM standard in all manufacturing process. A prefered brand of replacement chassis parts by professional technicians. we can also accommodate small-lot orders.",
+        "TaiwanText":"再補",
+        "SASAKIItem":["AUTO BULBS","AUTO FUSES","AUTO GAUGES","AUTO WIRES","BACK LAMP SWITCHES","CABLE SWITCHES",
+        "CARBURETOR REPAIR KITS","CIGARETTE LIGHTERS","COMBINATION SWITCHES","FAN MOTOR",
+        "FLASHER RELAYS", "FUEL FILTERS", "FUEL SHUT OFF VALVES", "GLOW PLUGS", "HOSE CLAMPS", "IGNITION STARTER SWITCHES", "OIL PRESSURE SENDERS", "OIL PRESSURE SWITCHES", "OIL STOP LIGHT SWITCHES", "PCV VALVES",
+        "RADIATOR CAPS", "RELAY", "REPAIR CONNECTOR HARNESS", "SOLENOID SWITCHES", "SOLENOID THROTTLE VALVES", "SPEED SENSORS",
+        "STOP LIGHT SWITCHES","TEMP. SENDING UNITS","THERMO SWITCHES","UNIVERSAL SWITCHES","UNIVERSAL WIPER MOTORS","WIPER MOTORS","WASHER PUMPS"
+       ],
+       "TOKAIItem":["BRAKE MASTER CYLINDER ASSY","CLUTCH MASTER CYLINDER ASSY.","CLUTCH SLAVE CYLINDER ASSY","FRONT/REAR WHEEL CYLINDER ASSY","REPAIR KITS","DISC BRAKE SEAL KITS","TIMING KITS & COMPONENTS","OIL SEALS"],
+       "NISHIOKAItem":["TIE ROD END","RACK END","ARM SHAFT","IDLER ARM","SIDE ROD","CONTROL ARM","PITMAN ARM","BALL JOINT","STABILIZER LINK","CROSS ROD","UNIVERSAL JOINT"]
+
+
+    },
+    "ProductsPage":{
+        "BannerTitle":"Products",
+        "BannerText":"We supply all renowned brand names of auto spare parts from top manufacturers of Taiwan.",
+        "Parts":["Suspension Parts","Transmission Parts","Engine Parts","Body Parts","Brake Parts","Rubber Parts","Electric Parts","Miscellaneous Parts"],
+        "PartsItem":[
+
+        {
+            "id":0,
+            "name":"Suspension Parts",
+            "english":"Suspension Parts",
+            "Parts":["Ball Joint","Center Link ( Drag Link)","Control Arm","Cross Rod","CV Joint","Door Stay","Hood Stay","Idler Arm","King Pin Kit","Knuckles","Pitman Arm","Rack End","Shock Absorber","Side Rod Assy.","Stabilizer Link","Steering Joint ( Yoke & Flange)","Steering Linkage","Steering Pump","Tie Rod End","Universal Joint"]
+         },
+
+         {  "id":1, 
+           "name":"Transmission Parts",
+           "english":"Transmission Parts",
+
+            "Parts":["Filter & Kits","Hub","Maindrive Gear","Sleeve","Synchronizer Ring","Transmission Gear"]
+        },
+        {  "id":2, 
+        "name":"Engine Parts",
+        "english":"Engine Parts",
+
+         "Parts":["Belt Tensioner Bearing","Carburetor Repair Kit","Chain Guide","Clutch Release Bearing","Condenser","Con-Rod Bearing","Cylinder Liner","Engine Bearing","Engine Valve","Filters","Fuel Pump","Gas Cap","Head Gasket","Hydraulic Tensioner","Idler Pulley","Leak Off Pipe","Manifold Gasket","Oil Cap","Oil Pan","Oil Pump","O-Rings","Overhaul Gasket Set","Piston Pin & Ring","Piston Set","Radiator","Radiator Cap","Rocker Arm","Sprocket Gear","Starter Gear","Tensioner Bearing","Timing Gear","Timing kit","Valve Lifter & Tappet","Valve Seat & Guide","Water Outlet","Water Pipe","Water Pump","Wheel Hub Bearing"]
+     },
+     {  "id":3, 
+     "name":"Body Parts",
+     "english":"Body Parts",
+
+      "Parts":["Auto Lamp","Bumper","Door Lock","Door Handle","Fender","Mirror","Fog Lamp","Grille","Hood","Window  Regulator","Window Handle","Mirror Arm"]
+  },
+  {  "id":4, 
+  "name":"Brake Parts",
+  "english":"Brake Parts",
+
+   "Parts":["Air Brake Assy","Air Dryer Assy","Air Master Assy","Brake Adjuster","Brake Caliper Assy","Brake Chambers Assy","Brake Drum","Brake Hose","Brake Master Cylinder Assy","Brake Pads","Brake Rotor","Brake Shoes","Caliper Piston","Clutch Booster Assy","Clutch Master Cylinder Assy","Clutch Slave Cylinder Assy","Disc Brake Seal Kits","Front/Rear Wheel Cylinder Assy","Hydraulic Parts","Power Brake Booster","Pressure Regulator","Relay Valve Assy","Repair Kits","Servo Gearshift Cylinders"]
+},
+{  "id":5, 
+"name":"Rubber Parts",
+"english":"Rubber Parts",
+
+ "Parts":["Boots & Hoses","Bushing","Cables","Center Bearings","Engine Mounting","Steering Couplings"]
+},
+{  "id":6, 
+"name":"Electric Parts",
+"english":"Electric Parts",
+
+ "Parts":["Alternator","Auto Fuse & Link","Back Lamp Switch","Cable Switch","Clock Spring Switch","Crankshaft Position Sensor","Distributor","Distributor Cap & Rotor","EGR Sensor","Fan Assembly & Blade","Fan Motor","Flasher & Relay","Fuel Tank Floats","IC &Voltage Regulator","Ignition Coil","Ignition Module","Map Sensor","Oil Pressure Switch","Oxygen Sensor","Power Window Switch","Push Pull Switch","Rocker Switch","Starter Solenoid","Starter Switch","Stop Light Switch","Thermo Switch","Throttle Switch","Toggle Switch","Turn Signal Switch","Water Temp. Sending Unit","Windshield Washer & Pump","Wiper Motor"]
+},
+{  "id":7, 
+"name":"Miscellaneous Parts",
+"english":"Miscellaneous Parts",
+ "Parts":["Impact Wrench","Grease Gun","Hand Tools","LED Working Lamp"]
+}
+         ]
+    }
+}

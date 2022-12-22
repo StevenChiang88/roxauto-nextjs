@@ -1,5 +1,17 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
+import { appWithTranslation } from "next-i18next";
+import Navbar from "../components/Navbar";
+import { ChakraProvider } from "@chakra-ui/react";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => {
+  return (
+    <>
+      <ChakraProvider>
+        <Navbar />
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </>
+  );
+};
+
+export default appWithTranslation(App);

@@ -1,0 +1,128 @@
+{
+    "generalButton":{
+        "Contact":"Contacta con",
+        "Products":"Productos"
+    },
+    "navBar":{
+        "Home":"Hogar",
+        "Brands":"Marcas",
+        "Products":"Productos",
+        "Contact":"Contacta"
+
+    },
+    "HomePage":{
+        "BannerTitle1":"Fabricante y exportador líder de",
+        "BannerTitle2":"Taiwán repuestos para automóviles",
+        "BannerText1":"ROX CORP. Ha estado involucrada en el negocio de repuestos de automóviles desde 1976 y ha demostrado ser uno de los mejores en Taiwán en esta industria.",
+        "BannerText2":"We continuously endeavor to source wide range of high quality Automotive Parts, providing fair price and ultimate benefits to the customers through value creation and mutual trust.",
+        "BannerText3":"Con abastecimiento en todo Taiwán, construyendo una relación sólida con las fábricas, exportando productos de alta calidad confiables en todo el mundo, ROX CORP. Es un socio experimentado y confiable en su negocio de autopartes."
+    },
+    "ContactBox":{
+        "Title":"Proporcionamos piezas de automóviles de fabricantes de Taiwán.",
+        "Text":"Por favor, siéntase libre de contactarnos para más información.",
+        "Button":"Contacta con nosotros"
+    },
+    "BrandsBox":{
+        "BrandsTitle":"Suministramos todas las marcas de fabricantes de Taiwán.",
+        "BrandsText":"Proporcionamos autopartes de fabricantes de Taiwán, no dude en contactarnos para obtener más detalles",
+        "SASAKI":"Piezas eléctricas de alta calidad",
+        "TOKAI":"Piezas de freno de alto rendimiento",
+        "NISHIOKA":"Piezas de suspensión duraderas",
+        "Taiwan":"Abastecimiento de todas las piezas de marca específicas para nuestros clientes"
+    },
+    "About":{
+        "AboutTitle":"Sobre nosotros",
+        "AboutText1":"Nos esforzamos continuamente por obtener una amplia gama de piezas automotrices de alta calidad, brindando un precio justo y los mejores beneficios para los clientes a través del valor. creation and mutual trust.",
+        "AboutText2":"Suministrar constantemente repuestos de automóviles a países del mercado de América Latina, Europa, Medio Oriente y el sudeste asiático, y participar en exposiciones en el extranjero para conocer a los clientes para una mejor comunicación.",
+        "AboutBoxTitle1":"Productos hechos en Taiwan",
+        "AboutBoxTitle2":"SOLO ORIENTADO A LA CALIDAD",
+        "AboutBoxTitle3":"Mejor precio",
+        "AboutBoxTitle4":"La atención al cliente es nuestra prioridad",
+        "AboutBoxText1":"Garantizamos que el suministro de autopartes es 100 % fabricado en Taiwán.",
+        "AboutBoxText2":"Todas nuestras autopartes se fabrican bajo estrictos estándares que permiten un alto rendimiento y durabilidad.",
+        "AboutBoxText3":"Con más de décadas de experiencia en las autopartes, nuestra buena relación con los principales fabricantes que nos ha permitido brindar autopartes integrales y precios competitivos a nuestros clientes en todo el mundo.",
+        "AboutBoxText4":"Creemos que las relaciones de confianza se construyen a través de la sinceridad, la honestidad y la comunicación completa."
+    },
+    "ContactPage":{
+        "ContactBannerTitle":"Contacta con nosotros",
+        "ContactBannerText":"¿Busca una mejor fuente de repuestos?",
+        "ContactTitle":"SOLICITUD DE PRESUPUESTO",
+        "ContactSubTitle":"Autopartes para Mayoristas o Importadores",
+        "ContactText1":"Complete el siguiente formulario con su información de contacto detallada y un breve mensaje. Para un servicio más eficiente, requerimos:",
+        "ContactText2":"- Consulta, indique la cantidad de compra y los números de OEM o los números de piezas de las fábricas",
+        "ContactText3":"- Es necesario indicar las marcas preferidas de Taiwán.",
+        "ContactForm1":"Nación y Compañía",
+        "ContactForm2":"Email",
+        "ContactForm3":"Persona de contacto",
+        "ContactForm4":"teléfono o WhatsAPP",
+        "ContactForm5":"mensaje",
+        "ContactForm6":"Enviar"
+    },
+    "BrandsPage":{
+        "BannerTitle":"Nuestras marcas",
+        "BannerText":"Calidad garantizada",
+        "SASAKIText":"Especializados en fabricación de interruptores. La marca desarrolla, produce y vende principalmente interruptores de automóvil para sistema de dirección, sistema de puerta, sistema de encendido y sistema de iluminación. También proporcionamos sensores y otros componentes electrónicos para la industria automotriz.",
+        "TOKAIText":"Proporciona frenos hidráulicos y cilindros de embrague de alta calidad. Assy. Y kits de reparación, piezas del kit de sincronización del motor y sellos de aceite. Durante más de 2 décadas, la fabricación de productos se basa en el estándar JIS y la especificación OEM, insistiendo en que todas las piezas vitales se fabrican al 100% en Taiwán para permitir un alto rendimiento confiable y constante.",
+        "NISHIOKAText":"Dealing in suspensions, steering and other key parts that impact automotive performance. Following OEM standard in all manufacturing process. A prefered brand of replacement chassis parts by professional technicians. we can also accommodate small-lot orders.",
+        "TaiwanText":"再補",
+        "SASAKIItem":["BOMBILLAS AUTOMÁTICAS","FUSIBLES AUTOMÁTICOS","INDICADORES AUTOMÁTICOS","CABLES AUTOMÁTICOS","INTERRUPTORES DE LUZ TRASERA","INTERRUPTORES DE CABLE",
+        "KITS DE REPARACIÓN DE CARBURADOR","ENCENDEDORES","INTERRUPTORES COMBINADOS","MOTOR DEL VENTILADOR",
+        "RELÉS INTERMITENTES", "FILTROS DE COMBUSTIBLE", "VÁLVULAS DE CIERRE DE COMBUSTIBLE", "BUJÍAS DE INCANDESCENCIA", "ABRAZADERAS", "INTERRUPTORES DE ARRANQUE DE ENCENDIDO", "ENVIADORES DE PRESIÓN DE ACEITE", "INTERRUPTORES DE PRESION DE ACEITE", "INTERRUPTORES DE LUZ DE PARADA DE ACEITE", "VÁLVULAS PCV",
+        "TAPONES DE RADIADOR", "RELÉ", "ARNÉS DEL CONECTOR DE REPARACIÓN", "INTERRUPTORES DE SOLENOIDE", "VÁLVULAS DE MARIPOSA SOLENOIDE", "SENSORES DE VELOCIDAD",
+        "INTERRUPTORES DE LUZ DE PARADA","TEMPERATURA. ENVÍO DE UNIDADES","INTERRUPTORES TÉRMICOS","INTERRUPTORES UNIVERSALES","MOTORES DE LIMPIAPARABRISAS UNIVERSALES","MOTORES DE LIMPIAPARABRISAS","BOMBAS LAVADORAS" ],
+       "TOKAIItem":["CONJUNTO DE CILINDRO MAESTRO DE FRENO","ENSAMBLE DEL CILINDRO MAESTRO DEL EMBRAGUE","EMBRAGUE CILINDRO ESCLAVO CONJUNTO","CONJUNTO DE CILINDRO DE RUEDA DELANTERA / TRASERA","KITS DE REPARACION","KITS DE RETENES DE FRENO DE DISCO","COMPONENTES Y KITS DE TIEMPO","SELLOS DE ACEITE"],
+       "NISHIOKAItem":["EXTREMO DE LA BARRA DE CORBATA","EXTREMO DEL RACK","EJE DEL BRAZO","BRAZO GOBERNANTE","VARILLA LATERAL","BRAZO DE CONTROL","BRAZO PITMAN","RÓTULA","ENLACE ESTABILIZADOR","VARILLA CRUZADA","JUNTA UNIVERSAL de coche"]
+    },
+    "ProductsPage":{
+        "BannerTitle":"Productos",
+        "BannerText":"Suministramos todas las marcas reconocidas de repuestos de automóviles de los principales fabricantes de Taiwán.",
+        "Parts":["Suspension Parts","Transmission Parts","Engine Parts","Body Parts","Brake Parts","Rubber Parts","Electric Parts","Miscellaneous Parts"],
+        "PartsItem":[
+
+            {
+                "id":0,
+                "name":"Piezas de suspensión",
+                "english":"Suspension Parts",
+
+                "Parts":["Rótula","Enlace central (enlace de arrastre)","Brazo de control","Varilla cruzada","Junta CV","Puerta de estancia","Campana Stay","Brazo loco","Kit de pasador rey","Nudillos","Brazo Pitman","Extremo del estante","Amortiguador","Conjunto de varilla lateral","Enlace estabilizador","Junta de dirección (yugo y brida)","Varillaje de dirección","Bomba de dirección","Extremo de barra de lazo","Junta universal"]
+             },
+    
+             {  "id":1, 
+               "name":"Partes de transmisión",
+               "english":"Transmission Parts",
+                "Parts":["Filtro y kits","el eje","Engranaje impulsor principal","manga del coche","Anillo sincronizador","Engranaje de transmisión"]
+            },
+            {  "id":2, 
+            "name":"Partes del motor",
+            "english":"Engine Parts",
+
+             "Parts":["Cojinete del tensor de correa","Kit de reparación de carburador","Cadena guía","Tope de desembrague","condensador de coche","Cojinete de biela","Camisa de cilindro","Cojinete del motor","Válvula del motor","filtros de coche","Bomba de combustible","Tapa de la gasolina","Junta de cabeza","Tensor hidráulico","Polea loca","Tubo de fuga","Junta de colector","Tapa de aceite","Colector de aceite","Bomba de aceite","Juntas tóricas","Juego de juntas de revisión","Pasador y anillo de pistón","Juego de pistón","radiador de coche","Tapón de radiador","Balancín","Engranaje de piñón","Engranaje de arranque","Cojinete del tensor","Engranaje de distribución","Kit de cronometraje","Elevador de válvula y empujador","Asiento de válvula y guía","salida de agua del coche","pipa de agua del coche","coche bomba de agua","Cojinete de cubo de rueda"]
+         },
+         {  "id":3, 
+         "name":"Partes del cuerpo",
+         "english":"Body Parts",
+          "Parts":["Lámpara automática","Parachoque","Cerradura de la puerta","Manija de la puerta","el parachoques","el espejo","Lampara de niebla","la reja","capucha","Regulador de ventana","Manija de ventana","Brazo de espejo"]
+      },
+      {  "id":4, 
+      "name":"Piezas de freno",
+      "english":"Brake Parts",
+       "Parts":["Conjunto de freno de aire","Conjunto de secador de aire","Montaje maestro de aire","Ajustador de freno","Conjunto de pinza de freno","Conjunto de cámaras de freno","Tambor del freno","Manguera de freno","Conjunto de cilindro maestro de freno","Pastillas de freno","Rotor del freno","Zapatas de freno","Pistón de la pinza","Conjunto de refuerzo de embrague","Conjunto de cilindro maestro de embrague","Conjunto de cilindro esclavo de embrague","Kits de sellos de freno de disco","Conjunto de cilindro de rueda delantera / trasera","Partes Hidraulicas","Refuerzo de freno de potencia","Regulador de presión","Conjunto de válvula de relé","Kits de reparación","Cilindros de cambio de marchas servo"]
+    },
+    {  "id":5, 
+    "name":"Piezas de caucho",
+    "english":"Rubber Parts",
+     "Parts":["Botas y mangueras","Cojinete","Cables","Cojinetes centrales","Montaje del motor","Acoplamientos de dirección"]
+    },
+    {  "id":6, 
+    "name":"Electric Parts",
+    "english":"Electric Parts",
+     "Parts":["Alternator","Fusible automático y enlace","Interruptor de luz trasera","Interruptor de cable","Interruptor de resorte de reloj","Sensor de posición del cigüeñal","Distributor","Tapa y rotor del distribuidor","Sensor EGR","Ensamblaje del ventilador y aspa","Motor del ventilador","Intermitente y relé","Flotadores del tanque de combustible","IC y regulador de voltaje","Bobina de encendido","Módulo de ignición","Sensor de mapa","Palanca de presión del aceite","Sensor de oxigeno","Interruptor de ventana eléctrica","Interruptor de empuje y tracción","Interruptor basculante","Solenoide de arranque","Interruptor de arranque","Interruptor de luz de parada","Interruptor térmico","Interruptor del acelerador","Interruptor de palanca","Interruptor de señal de giro","Temperatura del agua. Unidad de envío","Bomba y lavaparabrisas","Motor del limpiaparabrisas"]
+    },
+    {  "id":7, 
+    "name":"Miscellaneous Parts",
+    "english":"Miscellaneous Parts",
+     "Parts":["Llave de impacto","Pistola de engrase","Herramientas manuales","Lámpara de trabajo LED"]
+    }
+             ]
+    }
+}
