@@ -15,7 +15,7 @@ const Slider = ({ data }) => {
     <>
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
         {data.map((item) => (
-          <SwiperSlide>
+          <SwiperSlide key={item.alt}>
             <Image
               className="h-full w-full"
               width="1000"

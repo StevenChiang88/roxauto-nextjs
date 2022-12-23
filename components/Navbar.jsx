@@ -40,7 +40,7 @@ const Navbar = () => {
   }, [darkMode]);
 
   return (
-    <div className="fixed z-[100] w-full h-20 shadow-lg font-semibold text-xl">
+    <div className="sticky top-0 z-[100] w-full h-20 shadow-lg font-semibold text-xl">
       <div className="flex justify-between items-center w-full h-full px-2 ">
         <Link href="/">
           <Image
@@ -83,12 +83,12 @@ const Navbar = () => {
           </div>
           <div className="text-base">
             <Menu>
-              <MenuButton bgColor="#46A3FF" as={Button}>
+              <MenuButton bgColor="#3671E9" as={Button}>
                 {locale === "en" ? <span>English</span> : <span>Español</span>}
               </MenuButton>
-              <MenuList bgColor="#46A3FF" minW="0" w={"90px"}>
+              <MenuList bgColor="#3671E9" minW="0" w={"90px"}>
                 <MenuItem
-                  bgColor="#46A3FF"
+                  bgColor="#3671E9"
                   onClick={() => {
                     languageHandler("en");
                   }}
@@ -96,7 +96,7 @@ const Navbar = () => {
                   English
                 </MenuItem>
                 <MenuItem
-                  bgColor="#46A3FF"
+                  bgColor="#3671E9"
                   onClick={() => {
                     languageHandler("es");
                   }}
@@ -149,16 +149,16 @@ const Navbar = () => {
               />
               <div className="flex items-center text-base">
                 <Menu>
-                  <MenuButton bgColor="#46A3FF" as={Button}>
+                  <MenuButton bgColor="#3671E9" as={Button}>
                     {locale === "en" ? (
                       <span>English</span>
                     ) : (
                       <span>Español</span>
                     )}
                   </MenuButton>
-                  <MenuList bgColor="#46A3FF" minW="0" w={"90px"}>
+                  <MenuList bgColor="#3671E9" minW="0" w={"90px"}>
                     <MenuItem
-                      bgColor="#46A3FF"
+                      bgColor="#3671E9"
                       onClick={() => {
                         languageHandler("en");
                       }}
@@ -166,7 +166,7 @@ const Navbar = () => {
                       English
                     </MenuItem>
                     <MenuItem
-                      bgColor="#46A3FF"
+                      bgColor="#3671E9"
                       onClick={() => {
                         languageHandler("es");
                       }}
