@@ -3,7 +3,7 @@ import { AiFillFacebook, AiFillMail, AiFillPhone } from "react-icons/ai";
 import GeneralButton from "./GeneralButton";
 const Footer = () => {
   return (
-    <div className="w-full h-screen lg:h-auto ">
+    <div className="w-full ">
       <div className=" p-10 m-auto grid lg:grid-cols-2">
         <div className="lg:px-8">
           <h1>ROX Auto Parts</h1>

@@ -2,18 +2,16 @@ import React from "react";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
-import Link from "next/link";
-const BrandsPage = () => {
+import ContactCard from "../components/ContactCard";
+import GeneralBanner from "../components/GeneralBanner";
+const Brands = () => {
   const { t } = useTranslation();
   const { locale } = useRouter();
 
   return (
-    <div>
-      BrandsPage
-      <Link href="/" locale={locale}>
-        back to home
-      </Link>
-      <h4> {t("About.AboutBoxTitle1")}</h4>
+    <div className="top-[5rem] w-full flex flex-col justify-center">
+      <GeneralBanner/>
+    <ContactCard/>
     </div>
   );
 };
@@ -27,4 +25,4 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-export default BrandsPage;
+export default Brands;

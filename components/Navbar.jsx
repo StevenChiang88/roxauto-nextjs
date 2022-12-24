@@ -63,7 +63,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/Product" locale={locale}>
+            <Link href="/Products" locale={locale}>
               {t("navBar.Products")}
             </Link>
           </li>
