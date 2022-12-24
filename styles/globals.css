@@ -8,7 +8,11 @@
 body{
   @apply bg-[#e3e5e7] dark:bg-[#292E34] dark:text-white tracking-wide
 
- 
+}
+
+li {
+
+  @apply  hover:text-[#3671E9] ease-in duration-300
 }
 
 

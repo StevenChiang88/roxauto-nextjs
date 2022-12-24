@@ -13,7 +13,7 @@ import Image from "next/image";
 const Slider = ({ data }) => {
   return (
     <>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <Swiper  pagination={true} modules={[Pagination]} className="mySwiper">
         {data.map((item) => (
           <SwiperSlide key={item.alt}>
             <Image

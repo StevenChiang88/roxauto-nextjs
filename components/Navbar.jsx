@@ -40,7 +40,7 @@ const Navbar = () => {
   }, [darkMode]);
 
   return (
-    <div className="sticky top-0 z-[100] w-full h-20 shadow-lg font-semibold text-xl">
+    <div className="sticky top-0 z-[100] w-full h-20 shadow-lg font-semibold text-xl bg-white/75 dark:bg-black/50">
       <div className="flex justify-between items-center w-full h-full px-2 ">
         <Link href="/">
           <Image
@@ -51,7 +51,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <ul className="hidden gap-4 lg:flex items-center mr-8 ">
+        <ul className="hidden gap-4 lg:flex items-center mr-8  ">
           <li>
             <Link href="/" locale={locale}>
               {t("navBar.Home")}
@@ -215,7 +215,7 @@ const Navbar = () => {
                 className="cursor-pointer"
               >
                 {!darkMode ? <BsFillSunFill /> : <MdModeNight />}
-              </div>{" "}
+              </div>
             </div>
           </div>
         </div>

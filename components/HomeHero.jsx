@@ -11,16 +11,16 @@ const homePageSliderData = [
 const HomeHero = () => {
   const { t } = useTranslation();
   return (
-    <div className="w-full lg:w-4/5 h-[calc(100vh_-_5rem)] lg:h-auto  bg-[#f1f2f4] dark:bg-[#121318]  p-8 flex justify-between flex-col lg:flex-row">
+    <div className="w-full lg:w-4/5 bg-[#f1f2f4] dark:bg-[#121318]  p-8 flex justify-between flex-col lg:flex-row rounded-md">
       <div>
         <h1 className="text-xl lg:text-4xl">{t("HomePage.BannerTitle1")}</h1>
         <h1> {t("HomePage.BannerTitle2")}</h1>
         <h4> {t("HomePage.BannerText1")} </h4>
         <h4> {t("HomePage.BannerText3")} </h4>
-        <div className="flex flex-col lg:flex-row">
-          <GeneralButton href="/Contact" color="blue"  />
+        <div className="flex lg:gap-4 flex-col lg:flex-row">
+          <GeneralButton href="/Contact" color="blue" />
 
-          <GeneralButton href="/products" color="orange"  />
+          <GeneralButton href="/products" color="orange" />
         </div>
       </div>
       <div className="w-full lg:w-[50%] lg:p-10">

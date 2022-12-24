@@ -9,8 +9,8 @@ const GeneralButton = ({ color, href }) => {
       <button
         className={
           color === "blue"
-            ? "text-white hover:text-[#3671E9] bg-[#3671E9] hover:bg-white px-14 py-2 uppercase rounded-md duration-500 my-4 lg:mr-8"
-            : "text-white hover:text-[#E99736] bg-[#E99736] hover:bg-white px-14 py-2 uppercase rounded-md duration-500 my-4"
+            ? "text-white text-sm w-full bg-[#3671E9] hover:bg-white   hover:text-[#3671E9] hover:border hover:border-[#3671E9] px-14 py-2 uppercase rounded-md duration-500 my-4 lg:mr-8"
+            : "text-white text-sm w-full  bg-[#E99736] hover:bg-white hover:text-[#E99736] hover:border hover:border-[#E99736]  px-14 py-2 uppercase rounded-md duration-500 my-4"
         }
       >
         {href == "/Contact"
