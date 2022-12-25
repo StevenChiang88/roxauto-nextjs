@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import GeneralBanner from "../components/GeneralBanner";
-import { Input, Textarea } from "@chakra-ui/react";
+import { Button, Input, Textarea } from "@chakra-ui/react";
+import emailjs from "@emailjs/browser";
 
 const Products = () => {
   const { t } = useTranslation();
   const { locale } = useRouter();
+const form = useRef()
+const sendEmail = async(e) => {
+  e.preventDefault();
+  try{  const res = await emailjs.sendForm(process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID, process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY)
+console.log(res.text)
+    if (res.text === "OK"){alert("Send the message successfully!") }else{alert("Fail to send the mail")} 
+  }
+  catch(e){console.log(e)}
+   
+  // .then((result) => {
+  //       console.log(result.text);
+  //   }, (error) => {
+  //       console.log(error.text);
+  //   });
 
+  e.target.reset()
+
+};
   return (
     <div className="flex flex-col items-center">
       <GeneralBanner
@@ -25,12 +43,17 @@ const Products = () => {
           <p>{t("ContactPage.ContactText3")}</p>
         </div>
         <div>
-          <form className="flex flex-col gap-4 w-full">
-            <Input placeholder={t("ContactPage.ContactForm1")} />
-            <Input placeholder={t("ContactPage.ContactForm2")} />
-            <Input placeholder={t("ContactPage.ContactForm3")} />
-            <Input placeholder={t("ContactPage.ContactForm4")} />
-            <Textarea rows="5" placeholder={t("ContactPage.ContactForm5")} />
+          <form    id="ContactForm"       ref={form}           onSubmit={sendEmail}
+
+ className="flex flex-col gap-4 w-full">
+            <Input  required={true}          name="user_company"
+ placeholder={t("ContactPage.ContactForm1")} />
+            <Input required={true}  type="email"  name="user_email" placeholder={t("ContactPage.ContactForm2")} />
+            <Input  required={true}  name="user_name" placeholder={t("ContactPage.ContactForm3")} />
+            <Input required={true}  name="user_phone" placeholder={t("ContactPage.ContactForm4")} />
+            <Textarea required={true}  name="message" rows="5" placeholder={t("ContactPage.ContactForm5")} />
+            <Button type="submit"             form="ContactForm"
+>Submit</Button>
           </form>
         </div>
       </div>
@@ -46,4 +69,7 @@ export async function getStaticProps({ locale }) {
     },
   };
 }
+
+
+
 export default Products;
