@@ -23,7 +23,7 @@ const HomeHero = () => {
           <GeneralButton href="/products" color="orange" />
         </div>
       </div>
-      <div className="w-full lg:w-[50%]">
+      <div className="w-full lg:w-[40%]">
         <Slider data={homePageSliderData} />
       </div>
     </div>

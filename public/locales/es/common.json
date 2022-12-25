@@ -44,8 +44,8 @@
         "AboutBoxText4":"Creemos que las relaciones de confianza se construyen a través de la sinceridad, la honestidad y la comunicación completa."
     },
     "ContactPage":{
-        "ContactBannerTitle":"Contacta con nosotros",
-        "ContactBannerText":"¿Busca una mejor fuente de repuestos?",
+        "BannerTitle":"Contacta con nosotros",
+        "BannerText":"¿Busca una mejor fuente de repuestos?",
         "ContactTitle":"SOLICITUD DE PRESUPUESTO",
         "ContactSubTitle":"Autopartes para Mayoristas o Importadores",
         "ContactText1":"Complete el siguiente formulario con su información de contacto detallada y un breve mensaje. Para un servicio más eficiente, requerimos:",

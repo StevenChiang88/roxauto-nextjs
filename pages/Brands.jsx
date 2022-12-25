@@ -10,8 +10,11 @@ const Brands = () => {
 
   return (
     <div className="top-[5rem] w-full flex flex-col justify-center">
-      <GeneralBanner/>
-    <ContactCard/>
+      <GeneralBanner
+        title={t("BrandsPage.BannerTitle")}
+        text={t("BrandsPage.BannerText")}
+      />
+      <ContactCard />
     </div>
   );
 };

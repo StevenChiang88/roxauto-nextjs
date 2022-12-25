@@ -44,8 +44,8 @@
         "AboutBoxText4":"We believe that trusting relationships are built through sincerity, honesty and communication. Customers’ feedback will always be our working guideline."
     },
     "ContactPage":{
-        "ContactBannerTitle":"Contact Us",
-        "ContactBannerText":"Looking for better source of spare parts?",
+        "BannerTitle":"Contact Us",
+        "BannerText":"Looking for better source of spare parts?",
         "ContactTitle":"QUOTATION REQUEST",
         "ContactSubTitle":"Auto Parts for Wholesalers or Importers",
         "ContactText1":"Please fill out the following form  with your detailed contact information and brief message. For more efficient service, we require:",
