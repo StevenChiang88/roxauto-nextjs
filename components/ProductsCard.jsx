@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const ProductsCard = ({ parts }) => {
+const ProductsCard = ({ parts, picname }) => {
   return (
     <div className="flex flex-col items-center my-4">
       <Image
@@ -9,9 +9,9 @@ const ProductsCard = ({ parts }) => {
         alt="taiwan automotive"
         width="200"
         height="200"
-        src={`/../public/assets/Products/${parts}.jpg`}
+        src={`/../public/assets/Products/${picname}.jpg`}
       />
-      <h3>{parts}</h3>
+      <h3 className="py-2 font-semibold">{parts}</h3>
     </div>
   );
 };

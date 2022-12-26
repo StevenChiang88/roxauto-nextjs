@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
       <div className="w-full text-center mb-4">
         <h4 className="text-sm">
-          Copyright © 2023 ROX International Corporation All Right Reserved.
+          © ROX International Corporation All right reserved.
         </h4>
       </div>
     </div>

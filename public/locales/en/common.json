@@ -59,7 +59,7 @@
         "ContactForm6":"submit"
     },
     "BrandsPage":{
-        "BannerTitle":"Our Brands",
+        "BannerTitle":"Brands",
         "BannerText":"Quality Guaranteed",
         "SASAKIText":"Specialised in switches manufacturing. The brand mainly develops, produces and sells automobile switches for steering system, door system, ignition system, and lighting system. We also provides sensors and other electronic components for automotive industry.",
         "TOKAIText":"Providing high-quality hydraulic Brake & Clutch Cyl. Assy. & Repair Kits ,Engine Timing kit parts and Oil seals. For more than 2 decades, products manufacture based upon the JIS standard and OEM specification, insisted on all vital parts are 100% made in Taiwan to enable dependable and constant high performance.",
@@ -84,48 +84,63 @@
 
         {
             "id":0,
+            "space":" ",
             "name":"Suspension Parts",
             "english":"Suspension Parts",
             "Parts":["Ball Joint","Center Link ( Drag Link)","Control Arm","Cross Rod","CV Joint","Door Stay","Hood Stay","Idler Arm","King Pin Kit","Knuckles","Pitman Arm","Rack End","Shock Absorber","Side Rod Assy.","Stabilizer Link","Steering Joint ( Yoke & Flange)","Steering Linkage","Steering Pump","Tie Rod End","Universal Joint"]
          },
 
          {  "id":1, 
+         "space":"",
+
            "name":"Transmission Parts",
            "english":"Transmission Parts",
 
             "Parts":["Filter & Kits","Hub","Maindrive Gear","Sleeve","Synchronizer Ring","Transmission Gear"]
         },
         {  "id":2, 
+        "space":"",
+
         "name":"Engine Parts",
         "english":"Engine Parts",
 
          "Parts":["Belt Tensioner Bearing","Carburetor Repair Kit","Chain Guide","Clutch Release Bearing","Condenser","Con-Rod Bearing","Cylinder Liner","Engine Bearing","Engine Valve","Filters","Fuel Pump","Gas Cap","Head Gasket","Hydraulic Tensioner","Idler Pulley","Leak Off Pipe","Manifold Gasket","Oil Cap","Oil Pan","Oil Pump","O-Rings","Overhaul Gasket Set","Piston Pin & Ring","Piston Set","Radiator","Radiator Cap","Rocker Arm","Sprocket Gear","Starter Gear","Tensioner Bearing","Timing Gear","Timing kit","Valve Lifter & Tappet","Valve Seat & Guide","Water Outlet","Water Pipe","Water Pump","Wheel Hub Bearing"]
      },
      {  "id":3, 
+     "space":"",
+
      "name":"Body Parts",
      "english":"Body Parts",
 
       "Parts":["Auto Lamp","Bumper","Door Lock","Door Handle","Fender","Mirror","Fog Lamp","Grille","Hood","Window  Regulator","Window Handle","Mirror Arm"]
   },
   {  "id":4, 
+  "space":"",
+
   "name":"Brake Parts",
   "english":"Brake Parts",
 
    "Parts":["Air Brake Assy","Air Dryer Assy","Air Master Assy","Brake Adjuster","Brake Caliper Assy","Brake Chambers Assy","Brake Drum","Brake Hose","Brake Master Cylinder Assy","Brake Pads","Brake Rotor","Brake Shoes","Caliper Piston","Clutch Booster Assy","Clutch Master Cylinder Assy","Clutch Slave Cylinder Assy","Disc Brake Seal Kits","Front/Rear Wheel Cylinder Assy","Hydraulic Parts","Power Brake Booster","Pressure Regulator","Relay Valve Assy","Repair Kits","Servo Gearshift Cylinders"]
 },
 {  "id":5, 
+"space":"",
+
 "name":"Rubber Parts",
 "english":"Rubber Parts",
 
  "Parts":["Boots & Hoses","Bushing","Cables","Center Bearings","Engine Mounting","Steering Couplings"]
 },
 {  "id":6, 
+"space":"",
+
 "name":"Electric Parts",
 "english":"Electric Parts",
 
  "Parts":["Alternator","Auto Fuse & Link","Back Lamp Switch","Cable Switch","Clock Spring Switch","Crankshaft Position Sensor","Distributor","Distributor Cap & Rotor","EGR Sensor","Fan Assembly & Blade","Fan Motor","Flasher & Relay","Fuel Tank Floats","IC &Voltage Regulator","Ignition Coil","Ignition Module","Map Sensor","Oil Pressure Switch","Oxygen Sensor","Power Window Switch","Push Pull Switch","Rocker Switch","Starter Solenoid","Starter Switch","Stop Light Switch","Thermo Switch","Throttle Switch","Toggle Switch","Turn Signal Switch","Water Temp. Sending Unit","Windshield Washer & Pump","Wiper Motor"]
 },
 {  "id":7, 
+"space":"",
+
 "name":"Miscellaneous Parts",
 "english":"Miscellaneous Parts",
  "Parts":["Impact Wrench","Grease Gun","Hand Tools","LED Working Lamp"]
