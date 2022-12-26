@@ -18,7 +18,7 @@ const ContactCard = () => {
 
         <div className="absolute bg-black/50 w-full h-full text-white ">
           <div className="w-full md:w-[70%] h-full lg:w-1/2 p-10 flex flex-col justify-around">
-            <h1 className="text-3xl font-semibold">{t("ContactBox.Title")}</h1>
+            <h1>{t("ContactBox.Title")}</h1>
             <p className="text-lg py-8">{t("ContactBox.Text")}</p>
             <div className="max-w-[300px]">
               <GeneralButton href="/Contact" color="blue" />

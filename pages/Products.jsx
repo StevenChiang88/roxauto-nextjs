@@ -30,15 +30,18 @@ const Products = () => {
       </div>
       <div className="w-full p-8 bg-[#f1f2f4] dark:bg-[#121318]">
         <Tabs>
-          <div className="overflow-x-auto">
-            <TabList>
+          {/* <div  */}
+            <TabList className="overflow-y-hidden">
               {jsonData.ProductsPage.PartsItem.map((item) => (
-                <Tab key={item.name}>
-                  <h3 className="w-[150px] font-semibold">{item.name}</h3>
+                <Tab key={item.name}>   
+                <div className="w-auto break-keep whitespace-nowrap		">
+                {item.name} 
+
+                  </div>              
                 </Tab>
               ))}
             </TabList>
-          </div>
+          {/* </div> */}
 
           <TabPanels>
             {jsonData.ProductsPage.PartsItem.map((item) => (

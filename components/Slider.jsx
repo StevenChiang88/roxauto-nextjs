@@ -1,7 +1,7 @@
-import React, { useRef, useState } from "react";
+import React,  from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Swiper, SwiperSlide,  } from "swiper/react";
+import SwiperCore, { Autoplay } from 'swiper';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,9 +11,14 @@ import { Pagination } from "swiper";
 import Image from "next/image";
 
 const Slider = ({ data }) => {
+  SwiperCore.use([Autoplay]);
+
   return (
     <>
-      <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
+      <Swiper autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false
+                }} pagination={true} modules={[Pagination]} className="mySwiper">
         {data.map((item) => (
           <SwiperSlide key={item.alt}>
             <Image

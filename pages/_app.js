@@ -4,10 +4,20 @@ import Navbar from "../components/Navbar";
 import { ChakraProvider } from "@chakra-ui/react";
 import Footer from "../components/Footer";
 import Head from "next/head";
+import { CacheProvider } from "@emotion/react";
+import createCache from "@emotion/cache";
+
+const emotioncache  = createCache({
+  key:"emotionstyle",
+prepend: true
+})
 
 const App = ({ Component, pageProps }) => {
+
   return (
     <>
+    <CacheProvider value={emotioncache}>
+
       <ChakraProvider>
         <Head>
           <title>Rox Auto Parts - Taiwan Automotive Parts</title>
@@ -18,7 +28,9 @@ const App = ({ Component, pageProps }) => {
         <Navbar />
         <Component {...pageProps} />
       </ChakraProvider>
-      <Footer />
+      <Footer />    
+      </CacheProvider>
+
     </>
   );
 };

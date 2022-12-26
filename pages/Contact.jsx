@@ -3,7 +3,7 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import GeneralBanner from "../components/GeneralBanner";
-import { background, Button, Input, Textarea } from "@chakra-ui/react";
+import { Button, Input, Textarea } from "@chakra-ui/react";
 import emailjs from "@emailjs/browser";
 
 const Products = () => {
@@ -28,7 +28,6 @@ const Products = () => {
     } catch (e) {
       console.log(e);
     }
-
     e.target.reset();
   };
   return (
@@ -38,13 +37,13 @@ const Products = () => {
         text={t("ContactPage.BannerText")}
       />
 
-      <div className="w-full lg:w-4/5 bg-[#f1f2f4] dark:bg-[#121318] grid grid-cols-1 md:grid-cols-2 p-8 xl:mt-20">
-        <div className="md:px-6">
+      <div className="lg:my-[5rem] w-full lg:w-4/5 bg-[#f1f2f4] dark:bg-[#121318] grid grid-cols-1 md:grid-cols-2 p-[5rem]">
+        <div className="text-left lg:pr-[3rem]">
           <h2>{t("ContactPage.ContactTitle")}</h2>
-          <p>{t("ContactPage.ContactSubTitle")}</p>
-          <p>{t("ContactPage.ContactText1")}</p>
-          <p>{t("ContactPage.ContactText2")}</p>
-          <p>{t("ContactPage.ContactText3")}</p>
+          <h5>{t("ContactPage.ContactSubTitle")}</h5>
+          <h5>{t("ContactPage.ContactText1")}</h5>
+          <h5>{t("ContactPage.ContactText2")}</h5>
+          <h5>{t("ContactPage.ContactText3")}</h5>
         </div>
         <div>
           <form
@@ -53,45 +52,37 @@ const Products = () => {
             onSubmit={sendEmail}
             className="flex flex-col gap-4 w-full"
           >
-            <Input
-              borderColor="gray.400"
+             <Input
               required={true}
               name="user_company"
               placeholder={t("ContactPage.ContactForm1")}
             />
-            <Input
-              borderColor="gray.400"
+
+
+               <Input
               required={true}
               type="email"
               name="user_email"
               placeholder={t("ContactPage.ContactForm2")}
             />
+
             <Input
-              borderColor="gray.400"
               required={true}
               name="user_name"
               placeholder={t("ContactPage.ContactForm3")}
             />
             <Input
-              borderColor="gray.400"
               required={true}
               name="user_phone"
               placeholder={t("ContactPage.ContactForm4")}
             />
             <Textarea
-              borderColor="gray.400"
               required={true}
               name="message"
               rows="5"
               placeholder={t("ContactPage.ContactForm5")}
             />
-            <Button
-              className="bg-[#E99736] dark:bg-[#E99736] hover:bg-slate-500"
-              border="1px"
-              borderColor="gray.400"
-              type="submit"
-              form="ContactForm"
-            >
+            <Button className="bg-[#E99736] border border-[#E99736] hover:bg-[#f0b267]" type="submit" form="ContactForm">
               Submit
             </Button>
           </form>

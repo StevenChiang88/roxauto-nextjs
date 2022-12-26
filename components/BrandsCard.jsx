@@ -27,14 +27,14 @@ const BrandsCard = () => {
   const { t } = useTranslation();
   return (
     <div className="w-full lg:w-4/5 p-8 flex justify-between flex-col ">
-      <h1>{t("BrandsBox.BrandsTitle")}</h1>
-      <h3>{t("BrandsBox.BrandsText")}</h3>
+      <h1 className="text-center my-4">{t("BrandsBox.BrandsTitle")}</h1>
+      <h5 className="text-center">{t("BrandsBox.BrandsText")}</h5>
 
       <div className="grid md:grid-cols-2 gap-8">
         {BrandsCardData.map((item) => (
           <Card
             key={item.BrandName}
-            className="text-black bg-[#F1F2F4] dark:text-white  dark:bg-[#121318]"
+            className="text-black bg-[#f1f2f4] dark:text-white  dark:bg-[#121318]"
           >
             <Image
               className="w-full h-auto "
@@ -44,10 +44,10 @@ const BrandsCard = () => {
               alt={item.BrandName}
             />
             <div className="p-4">
-              <h3 className="font-bold text-2xl tracking-wide">
+              <h2>
                 {t(item.BrandName)}
-              </h3>
-              <p>{t(item.BrandText)}</p>
+              </h2>
+              <h5>{t(item.BrandText)}</h5>
             </div>
           </Card>
         ))}

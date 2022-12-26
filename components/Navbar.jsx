@@ -179,7 +179,7 @@ const Navbar = () => {
             </div>
 
             <div className="border-b-2 border-gray-300 my-8">
-              <h4 className="py-4 ">Eexperienced and reliable partner</h4>
+              <h5 className="py-4 ">Eexperienced and reliable partner</h5>
             </div>
             <ul className="gap-8 flex flex-col items-start  ">
               <li>

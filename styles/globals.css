@@ -6,7 +6,7 @@
 @layer base {
 
 body{
-  @apply bg-[#e3e5e7] dark:bg-[#292E34] dark:text-white tracking-wide
+  @apply font-sans bg-[#e3e5e7] dark:bg-[#292E34] dark:text-white tracking-wide
 
 }
 
@@ -15,7 +15,27 @@ li {
   @apply  hover:text-[#3671E9] ease-in duration-300
 }
 
+h1,h2,h3,h4 {
+  @apply font-bold
+}
 
+h1{
+  @apply text-4xl tracking-wide 
+}
+
+h2{
+  @apply text-3xl tracking-wide 
+
+}
+
+h3{
+  @apply text-2xl tracking-wide 
+
+}
+
+h5{
+  @apply text-lg font-medium my-4 tracking-wide 
+}
 }
 
 

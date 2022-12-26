@@ -7,11 +7,11 @@ const ProductsCard = ({ parts, picname }) => {
       <Image
         className="rounded-md "
         alt="taiwan automotive"
-        width="200"
-        height="200"
+        width="250"
+        height="250"
         src={`/../public/assets/Products/${picname}.jpg`}
       />
-      <h3 className="py-2 font-semibold">{parts}</h3>
+      <h3 className="py-4">{parts}</h3>
     </div>
   );
 };
