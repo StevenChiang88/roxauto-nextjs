@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 ">
         <Link href="/">
           <Image
-            src="/../public/assets/roxicon.png"
+            src="/../public/static/images/roxicon.png"
             alt="roxicon"
             width="125"
             height="50"
@@ -141,7 +141,7 @@ const Navbar = () => {
           <div>
             <div className="flex justify-between">
               <Image
-                src="/../public/assets/roxicon.png"
+                src="/../public/static/images/roxicon.png"
                 alt="roxicon"
                 width="100"
                 height="50"

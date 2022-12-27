@@ -5,7 +5,6 @@ import React from "react";
 import Slider from "./Slider";
 
 const BrandSlider = ({ brandName, SliderData }) => {
-  console.log(SliderData);
 
   const { t } = useTranslation();
   return (
@@ -19,7 +18,7 @@ const BrandSlider = ({ brandName, SliderData }) => {
             className="w-full h-auto "
             width="1000"
             height="200"
-            src={`/../public/assets/brandspics/${brandName}.png`}
+            src={`/../public/static/images/brandspics/${brandName}.png`}
             alt={brandName}
           />
           <div className="p-4 ">

@@ -5,10 +5,10 @@ import BrandsCard from "../components/BrandsCard";
 import ContactCard from "../components/ContactCard";
 import GeneralButton from "../components/GeneralButton";
 import HomeHero from "../components/HomeHero";
-import Dollar from "../public/assets/icons/Dollar.svg";
-import Gears from "../public/assets/icons/Gears.svg";
-import Handshake from "../public/assets/icons/handshake.svg";
-import Taiwan from "../public/assets/icons/Taiwan.svg";
+import Dollar from "../public/static/images/icons/Dollar.svg";
+import Gears from "../public/static/images/icons/Gears.svg";
+import Handshake from "../public/static/images/icons/handshake.svg";
+import Taiwan from "../public/static/images/icons/Taiwan.svg";
 
 
 export default function Home() {
