@@ -25,7 +25,7 @@ console.log(data, "Sloder的資料")
               className="h-full w-full"
               width="1000"
               height="1000"
-              src={`/../public/static/images/${item.link}`}
+              src={require(`../public/static/images/${item.link}`)}
               alt={item.link}
             />
           </SwiperSlide>

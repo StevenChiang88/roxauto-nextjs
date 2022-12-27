@@ -40,7 +40,7 @@ const BrandsCard = () => {
               className="w-full h-auto "
               width="1000"
               height="200"
-              src={`/../public/static/images/brandspics/${item.BrandName}.png`}
+              src={require(`../public/static/images/brandspics/${item.BrandName}.png`)}
               alt={item.BrandName}
             />
             <div className="p-4">
