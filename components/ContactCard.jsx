@@ -12,7 +12,7 @@ const ContactCard = () => {
           className="absolute w-full h-full object-cover  rounded-xl "
           width="1000"
           height="1000"
-          src="/../public/assets/contactpic.jpg"
+          src={require("../public/static/images/contactpic.jpg")}
           alt="rox auto parts"
         />
 
