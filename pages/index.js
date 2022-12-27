@@ -5,10 +5,10 @@ import BrandsCard from "../components/BrandsCard";
 import ContactCard from "../components/ContactCard";
 import GeneralButton from "../components/GeneralButton";
 import HomeHero from "../components/HomeHero";
-import Dollar from "../public/static/images/icons/Dollar.svg";
-import Gears from "../public/static/images/icons/Gears.svg";
-import Handshake from "../public/static/images/icons/handshake.svg";
-import Taiwan from "../public/static/images/icons/Taiwan.svg";
+// import Dollar from "../public/static/images/icons/Dollar.svg";
+// import Gears from "../public/static/images/icons/Gears.svg";
+// import Handshake from "../public/static/images/icons/handshake.svg";
+// import Taiwan from "../public/static/images/icons/Taiwan.svg";
 
 
 export default function Home() {
@@ -27,22 +27,22 @@ export default function Home() {
           </div>
           <div className="lg:w-2/3 grid md:grid-cols-2 gap-10 ">
             <Card className="flex items-center justify-around lg:max-h-[350px] text-black dark:text-white bg-[#e3e5e7] dark:bg-[#292E34] py-4  hover:bg-gray-400  dark:hover:bg-gray-500">
-              <Taiwan />
+              {/* <Taiwan /> */}
               <h3 className="py-2">{t("About.AboutBoxTitle1")}</h3>
               <p className="p-8">{t("About.AboutBoxText1")}</p>
             </Card>
             <Card className="flex items-center justify-around  lg:max-h-[350px] text-black dark:text-white bg-[#e3e5e7] dark:bg-[#292E34] py-4  hover:bg-gray-400  dark:hover:bg-gray-500">
-              <Gears />
+              {/* <Gears /> */}
               <h3 className="py-2  text-center">{t("About.AboutBoxTitle2")}</h3>
               <p className="p-8">{t("About.AboutBoxText2")}</p>
             </Card>
             <Card className="flex items-center justify-around  lg:max-h-[350px] text-black dark:text-white bg-[#e3e5e7] dark:bg-[#292E34] py-4  hover:bg-gray-400  dark:hover:bg-gray-500">
-              <Dollar />
+              {/* <Dollar /> */}
               <h3 className="py-2">{t("About.AboutBoxTitle3")}</h3>
               <p className="p-8">{t("About.AboutBoxText3")}</p>
             </Card>
             <Card className="flex items-center justify-around lg:max-h-[350px] text-black dark:text-white bg-[#e3e5e7] dark:bg-[#292E34] py-4  hover:bg-gray-400  dark:hover:bg-gray-500">
-              <Handshake />
+              {/* <Handshake /> */}
               <h3 className="py-2  text-center" >{t("About.AboutBoxTitle4")}</h3>
               <p className="p-8">{t("About.AboutBoxText4")}</p>
             </Card>

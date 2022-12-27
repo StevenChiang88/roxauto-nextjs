@@ -18,7 +18,7 @@ const BrandSlider = ({ brandName, SliderData }) => {
             className="w-full h-auto "
             width="1000"
             height="200"
-            src={require(`/../public/static/images/brandspics/${brandName}.png`)}
+            src={require(`../public/static/images/brandspics/${brandName}.png`)}
             alt={brandName}
           />
           <div className="p-4 ">

@@ -13,7 +13,7 @@ const GeneralBanner = ({ title, text }) => {
         alt="taiwan auto parts"
         width="1000"
         height="400"
-        src={require("/../public/static/images/generalBannerPic.jpg")}
+        src={require("../public/static/images/generalBannerPic.jpg")}
       />
     </div>
   );
