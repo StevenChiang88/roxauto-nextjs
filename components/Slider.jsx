@@ -1,7 +1,7 @@
-import React,  from "react";
+import React from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide,  } from "swiper/react";
-import SwiperCore, { Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,17 +15,22 @@ const Slider = ({ data }) => {
 
   return (
     <>
-      <Swiper autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false
-                }} pagination={true} modules={[Pagination]} className="mySwiper">
+      <Swiper
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        pagination={true}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
         {data.map((item) => (
-          <SwiperSlide key={item.alt}>
+          <SwiperSlide key={item.link}>
             <Image
-              className="h-full w-full"
+              className="h-full w-full rounded-md"
               width="1000"
               height="1000"
-              src={`/../public/assets/homepage/${item.link}`}
+              src={`/../public/assets/${item.link}`}
               alt={item.alt}
             />
           </SwiperSlide>

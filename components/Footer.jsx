@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="w-full ">
       <div className=" p-10 m-auto grid lg:grid-cols-2">
         <div className="lg:pr-[10rem]">
-          <h1>ROX Auto Parts</h1>
+          <h2>ROX AUTO PARTS</h2>
           <h5 className="py-4">
             Rox Auto Parts has been engaged in the automotive parts business
             since 1976 and has proven itself to be one of the best in Taiwan
@@ -15,10 +15,16 @@ const Footer = () => {
           </h5>
           <div className="flex gap-4 mb-4 items-center">
             <a target="blank" href="https://www.facebook.com/roxqualityparts/">
-            <AiFillFacebook  className="hover:text-gray-400 ease-in duration-300" size="40" />
+              <AiFillFacebook
+                className="hover:text-gray-400 ease-in duration-200"
+                size="40"
+              />
             </a>
             <a target="blank" href="mailto:rox@rox.com">
-            <AiFillMail className="hover:text-gray-400 ease-in duration-300" size="40" />
+              <AiFillMail
+                className="hover:text-gray-400 ease-in duration-200"
+                size="40"
+              />
             </a>
 
             <GeneralButton href="/Contact" color="blue" />
@@ -29,19 +35,22 @@ const Footer = () => {
           <div className="flex flex-col">
             <h3 className=" mb-4">Site</h3>
             <Link href="/">
-            <h5 className="hover:text-[#3671E9] ease-in duration-300">Home</h5>
-</Link>
+              <h5 className="hover:text-[#3671E9] ease-in duration-200">
+                Home
+              </h5>
+            </Link>
 
-<Link href="/Brands">
-
-            <h5 className="hover:text-[#3671E9] ease-in duration-300">Brands</h5>
+            <Link href="/Brands">
+              <h5 className="hover:text-[#3671E9] ease-in duration-200">
+                Brands
+              </h5>
             </Link>
 
             <Link href="/Products">
-
-            <h5 className="hover:text-[#3671E9] ease-in duration-300">Products</h5>
+              <h5 className="hover:text-[#3671E9] ease-in duration-200">
+                Products
+              </h5>
             </Link>
-
           </div>
           <div className="flex flex-col">
             <h3 className="mb-4">Info</h3>

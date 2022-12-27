@@ -1,7 +1,7 @@
 { 
     "generalButton":{
         "Contact":"Contact Us",
-        "Products":"Go to Products"
+        "Products":"Products"
     },
 
     "navBar":{
@@ -28,7 +28,7 @@
         "SASAKI":"High quality electrical parts",
         "TOKAI":"High Performance brake parts",
         "NISHIOKA":"Durable suspension parts",
-        "Taiwan":"Sourcing all specific branded parts for our customers"
+        "TAIWAN":"Sourcing all specific branded parts for our customers"
     },
     "About":{
         "AboutTitle":"About us",

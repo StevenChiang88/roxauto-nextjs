@@ -1,6 +1,6 @@
 {
     "generalButton":{
-        "Contact":"Contacta con",
+        "Contact":"Contacta",
         "Products":"Productos"
     },
     "navBar":{
@@ -28,7 +28,7 @@
         "SASAKI":"Piezas eléctricas de alta calidad",
         "TOKAI":"Piezas de freno de alto rendimiento",
         "NISHIOKA":"Piezas de suspensión duraderas",
-        "Taiwan":"Abastecimiento de todas las piezas de marca específicas para nuestros clientes"
+        "TAIWAN":"Abastecimiento de todas las piezas de marca específicas para nuestros clientes"
     },
     "About":{
         "AboutTitle":"Sobre nosotros",

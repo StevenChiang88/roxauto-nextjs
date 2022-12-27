@@ -5,8 +5,8 @@ import React from "react";
 
 const BrandsCardData = [
   {
-    BrandName: "Taiwan",
-    BrandText: "BrandsBox.Taiwan",
+    BrandName: "TAIWAN",
+    BrandText: "BrandsBox.TAIWAN",
   },
 
   {
@@ -34,7 +34,7 @@ const BrandsCard = () => {
         {BrandsCardData.map((item) => (
           <Card
             key={item.BrandName}
-            className="text-black bg-[#f1f2f4] dark:text-white  dark:bg-[#121318]"
+            className="text-black bg-[#f1f2f4] dark:text-white  dark:bg-[#121318]  rounded-xl"
           >
             <Image
               className="w-full h-auto "
@@ -44,9 +44,7 @@ const BrandsCard = () => {
               alt={item.BrandName}
             />
             <div className="p-4">
-              <h2>
-                {t(item.BrandName)}
-              </h2>
+              <h2>{t(item.BrandName)}</h2>
               <h5>{t(item.BrandText)}</h5>
             </div>
           </Card>

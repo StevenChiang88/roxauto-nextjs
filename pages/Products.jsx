@@ -31,16 +31,15 @@ const Products = () => {
       <div className="w-full p-8 bg-[#f1f2f4] dark:bg-[#121318]">
         <Tabs>
           {/* <div  */}
-            <TabList className="overflow-y-hidden">
-              {jsonData.ProductsPage.PartsItem.map((item) => (
-                <Tab key={item.name}>   
+          <TabList className="overflow-y-hidden">
+            {jsonData.ProductsPage.PartsItem.map((item) => (
+              <Tab key={item.name}>
                 <div className="w-auto break-keep whitespace-nowrap		">
-                {item.name} 
-
-                  </div>              
-                </Tab>
-              ))}
-            </TabList>
+                  {item.name}
+                </div>
+              </Tab>
+            ))}
+          </TabList>
           {/* </div> */}
 
           <TabPanels>
@@ -50,7 +49,6 @@ const Products = () => {
                   {item.Parts.map((item) => (
                     <ListItem className="py-4" key={item} borderBottom="1px">
                       <h4 className="font-semibold">{item}</h4>
-                      <h4>ads/asda/xzc</h4>
                     </ListItem>
                   ))}
                 </List>

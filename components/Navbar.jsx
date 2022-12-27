@@ -40,7 +40,7 @@ const Navbar = () => {
   }, [darkMode]);
 
   return (
-    <div className="sticky top-0 z-[100] w-full h-20 shadow-lg font-semibold text-xl bg-white/75 dark:bg-black/50 uppercase">
+    <div className="sticky top-0 z-[100] w-full h-20 shadow-lg font-semibold text-lg bg-white/75 dark:bg-black/50 uppercase">
       <div className="flex justify-between items-center w-full h-full px-2 ">
         <Link href="/">
           <Image

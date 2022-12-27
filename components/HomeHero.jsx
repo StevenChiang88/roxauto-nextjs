@@ -4,8 +4,8 @@ import GeneralButton from "./GeneralButton";
 import Slider from "./Slider";
 
 const homePageSliderData = [
-  { link: "roxhomepage01.jpeg", alt: "rox auto parts office" },
-  { link: "roxhomepage02.jpg", alt: "Automotive Parts Associates" },
+  { link: "homepage/roxhomepage01.jpeg", alt: "rox auto parts office" },
+  { link: "homepage/roxhomepage02.jpg", alt: "Automotive Parts Associates" },
 ];
 
 const HomeHero = () => {
@@ -23,8 +23,8 @@ const HomeHero = () => {
           <GeneralButton href="/products" color="orange" />
         </div>
       </div>
-      <div className="w-full lg:w-[40%]">
-        <Slider  data={homePageSliderData} />
+      <div className="w-full lg:w-[45%]">
+        <Slider data={homePageSliderData} />
       </div>
     </div>
   );
