@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 ">
         <Link href="/">
           <Image
-            src="/../public/static/images/roxicon.png"
+            src={require("../public/static/images/roxicon.png")}
             alt="roxicon"
             width="125"
             height="50"
@@ -138,10 +138,12 @@ const Navbar = () => {
               : "fixed top-0 left-[-100%] h-screen ease-in duration-500"
           }
         >
+
+
           <div>
             <div className="flex justify-between">
               <Image
-                src="/../public/static/images/roxicon.png"
+                src={require("../public/static/images/roxicon.png")}
                 alt="roxicon"
                 width="100"
                 height="50"
