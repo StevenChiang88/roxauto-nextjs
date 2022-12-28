@@ -39,7 +39,7 @@ const Brands = () => {
     {
       name: "TAIWAN",
       data: [],
-      brandparts: jsonData.BrandsPage.SASAKIItem,
+      brandparts: jsonData.BrandsPage.TAIWANItem,
     },
   ];
 
@@ -58,7 +58,7 @@ const Brands = () => {
         title={t("BrandsPage.BannerTitle")}
         text={t("BrandsPage.BannerText")}
       />
-      <div className="w-full lg:w-4/5">
+      <div className="w-full lg:w-[90%]">
         <Tabs>
           <TabList className="flex flex-col lg:flex-row border-b-2 border-gray-500">
             <Tab className="font-semibold flex-1 py-4 lg:py-10">SASAKI</Tab>
@@ -76,9 +76,11 @@ const Brands = () => {
                   brandName={item.name}
                   SliderData={BrandArray[index].data}
                 />
-                <List className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                <List className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-4">
                   {item.brandparts.map((item) => (
-                    <ListItem key={item}>{item}</ListItem>
+                    <ListItem borderBottom="1px" className="py-2 " key={item}>
+                      {item}
+                    </ListItem>
                   ))}
                 </List>
               </TabPanel>

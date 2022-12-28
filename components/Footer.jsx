@@ -54,9 +54,15 @@ const Footer = () => {
           </div>
           <div className="flex flex-col">
             <h3 className="mb-4">Info</h3>
-            <h5>Contact Us</h5>
-            <h5>Rox@rox.com</h5>
-            <h5>Fax:(+02)123 4567</h5>
+            <h5 className="hover:text-[#3671E9] ease-in duration-200">
+              rox@rox.com
+            </h5>
+            <h5 className="hover:text-[#3671E9] ease-in duration-200">
+              Tel: (02)2701-4959
+            </h5>
+            <h5 className="hover:text-[#3671E9] ease-in duration-200">
+              Fax: (02)2703-2381
+            </h5>
           </div>
         </div>
       </div>

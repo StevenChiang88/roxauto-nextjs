@@ -5,10 +5,9 @@ import React from "react";
 import Slider from "./Slider";
 
 const BrandSlider = ({ brandName, SliderData }) => {
-
   const { t } = useTranslation();
   return (
-    <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
       <div>
         <Card
           key={brandName}
