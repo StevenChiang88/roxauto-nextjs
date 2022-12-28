@@ -21,7 +21,7 @@ export default function Home() {
             <h2>{t("About.AboutTitle")}</h2>
             <h5>{t("About.AboutText1")}</h5>
             <h5>{t("About.AboutText2")}</h5>
-            <GeneralButton href="/products" color="orange" />
+            <GeneralButton href="/Products" color="orange" />
           </div>
           <div className="lg:w-2/3 grid md:grid-cols-2 gap-10 ">
             {iconArray.map((item, index) => (

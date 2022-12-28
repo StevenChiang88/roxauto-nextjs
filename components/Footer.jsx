@@ -16,13 +16,13 @@ const Footer = () => {
           <div className="flex gap-4 mb-4 items-center">
             <a target="blank" href="https://www.facebook.com/roxqualityparts/">
               <AiFillFacebook
-                className="hover:text-gray-400 ease-in duration-200"
+                className="hover:text-[#3671E9] ease-in duration-200"
                 size="40"
               />
             </a>
             <a target="blank" href="mailto:rox@rox.com">
               <AiFillMail
-                className="hover:text-gray-400 ease-in duration-200"
+                className="hover:text-[#3671E9] ease-in duration-200"
                 size="40"
               />
             </a>

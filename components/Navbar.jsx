@@ -229,9 +229,19 @@ const Navbar = () => {
             </ul>
 
             <div className="mt-10 flex gap-4 text-3xl">
-              <AiFillFacebook />
-              <AiFillMail />
-              <AiFillPhone />
+              <a
+                target="blank"
+                href="https://www.facebook.com/roxqualityparts/"
+              >
+                <AiFillFacebook />
+              </a>
+              <a target="blank" href="mailto:rox@rox.com">
+                <AiFillMail />
+              </a>
+              <a target="blank" href="tel:0227014959">
+                <AiFillPhone />
+              </a>
+
               <div
                 onClick={() => {
                   setDarkMode((prev) => !prev);

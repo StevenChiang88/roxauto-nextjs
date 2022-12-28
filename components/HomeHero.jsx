@@ -20,7 +20,7 @@ const HomeHero = () => {
         <div className="flex lg:gap-4 flex-col lg:flex-row">
           <GeneralButton href="/Contact" color="blue" />
 
-          <GeneralButton href="/products" color="orange" />
+          <GeneralButton href="/Products" color="orange" />
         </div>
       </div>
       <div className="w-full lg:w-[45%]">
