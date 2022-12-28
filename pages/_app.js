@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
+import BackToTop from "../components/BackToTop";
 
 const emotioncache = createCache({
   key: "emotionstyle",
@@ -26,6 +27,7 @@ const App = ({ Component, pageProps }) => {
             />
             <link rel="icon" href="/favicon.png" />
           </Head>
+          <BackToTop />
           <Navbar />
           <Component {...pageProps} />
         </ChakraProvider>

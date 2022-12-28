@@ -20,7 +20,7 @@ const Footer = () => {
                 size="40"
               />
             </a>
-            <a target="blank" href="mailto:rox@rox.com">
+            <a target="blank" href="mailto:rox@rox.com.tw">
               <AiFillMail
                 className="hover:text-[#3671E9] ease-in duration-200"
                 size="40"
@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="flex flex-col">
             <h3 className="mb-4">Info</h3>
             <h5 className="hover:text-[#3671E9] ease-in duration-200">
-              rox@rox.com
+              Mail: rox@rox.com.tw
             </h5>
             <h5 className="hover:text-[#3671E9] ease-in duration-200">
               Tel: (02)2701-4959

@@ -235,7 +235,7 @@ const Navbar = () => {
               >
                 <AiFillFacebook />
               </a>
-              <a target="blank" href="mailto:rox@rox.com">
+              <a target="blank" href="mailto:rox@rox.com.tw">
                 <AiFillMail />
               </a>
               <a target="blank" href="tel:0227014959">
