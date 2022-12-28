@@ -12,7 +12,6 @@ import Image from "next/image";
 
 const Slider = ({ data }) => {
   SwiperCore.use([Autoplay]);
-console.log(data, "Sloder的資料")
   return (
     <>
       <Swiper autoplay={{

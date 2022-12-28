@@ -10,7 +10,7 @@ const ProductsCard = ({ parts, picname }) => {
         alt="taiwan automotive"
         width="250"
         height="250"
-        src={`/../public/assets/Products/${picname}.jpg`}
+        src={require(`../public/static/images/Products/${picname}.jpg`)}
       />
       <h3 className="py-8">{parts}</h3>
     </div>
