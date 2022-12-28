@@ -22,7 +22,7 @@ const BackToTop = () => {
   return (
     backToTopShow && (
       <Button
-        className="fixed right-4 bottom-4 bg-gray-400  w-[50px] h-[45px] z-[100]"
+        className="fixed right-4 bottom-4 bg-gray-400 hover:bg-[#E99736]  w-[50px] h-[45px] z-[100]"
         onClick={() => {
           scrollToTop();
         }}
