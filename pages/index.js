@@ -25,7 +25,10 @@ export default function Home() {
           </div>
           <div className="lg:w-2/3 grid md:grid-cols-2 gap-10 ">
             {iconArray.map((item, index) => (
-              <Card className="flex items-center justify-around lg:max-h-[350px] text-black dark:text-white bg-[#e3e5e7] dark:bg-[#292E34] py-4  hover:bg-gray-400  dark:hover:bg-gray-500">
+              <Card
+                key={item}
+                className="flex items-center justify-around lg:max-h-[350px] text-black dark:text-white bg-[#e3e5e7] dark:bg-[#292E34] py-4  hover:bg-gray-400  dark:hover:bg-gray-500"
+              >
                 <Image
                   src={require(`../public/static/images/icons/${item}.png`)}
                   alt={item}

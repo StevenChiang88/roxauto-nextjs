@@ -138,8 +138,6 @@ const Navbar = () => {
               : "fixed top-0 left-[-100%] h-screen ease-in duration-500"
           }
         >
-
-
           <div>
             <div className="flex justify-between">
               <Image
@@ -185,22 +183,46 @@ const Navbar = () => {
             </div>
             <ul className="gap-8 flex flex-col items-start  ">
               <li>
-                <Link href="/" locale={locale}>
+                <Link
+                  onClick={() => {
+                    setNavOpen(false);
+                  }}
+                  href="/"
+                  locale={locale}
+                >
                   {t("navBar.Home")}
                 </Link>
               </li>
               <li>
-                <Link href="/Brands" locale={locale}>
+                <Link
+                  onClick={() => {
+                    setNavOpen(false);
+                  }}
+                  href="/Brands"
+                  locale={locale}
+                >
                   {t("navBar.Brands")}
                 </Link>
               </li>
               <li>
-                <Link href="/Products" locale={locale}>
+                <Link
+                  onClick={() => {
+                    setNavOpen(false);
+                  }}
+                  href="/Products"
+                  locale={locale}
+                >
                   {t("navBar.Products")}
                 </Link>
               </li>
               <li>
-                <Link href="/Contact" locale={locale}>
+                <Link
+                  onClick={() => {
+                    setNavOpen(false);
+                  }}
+                  href="/Contact"
+                  locale={locale}
+                >
                   {t("navBar.Contact")}
                 </Link>
               </li>
