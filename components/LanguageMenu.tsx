@@ -28,7 +28,7 @@ export default function LanguageMenu() {
         aria-haspopup="listbox"
         aria-expanded={open}
         onClick={() => setOpen((prev) => !prev)}
-        className="btn btn-ghost !py-1.5 !px-4"
+        className="btn btn-pop !py-1.5 !px-4"
       >
         {current.label}
       </button>
