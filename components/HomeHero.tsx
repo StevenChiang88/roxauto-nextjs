@@ -23,7 +23,7 @@ export default function HomeHero() {
           <p className="text-muted text-lg">{t("HomePage.BannerText3")}</p>
           <div className="mt-4 flex flex-col gap-4 sm:flex-row">
             <CtaButton href="/contact">{t("generalButton.Contact")}</CtaButton>
-            <CtaButton href="/products">{t("generalButton.Products")}</CtaButton>
+            <CtaButton href="/products" variant="pop-alt">{t("generalButton.Products")}</CtaButton>
           </div>
         </div>
         <div className="w-full self-center lg:w-[45%]">
