@@ -2,45 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
+  body {
+    @apply font-sans tracking-wide;
+    background-color: var(--canvas);
+    color: var(--ink);
+  }
 
-body{
-  @apply font-sans bg-[#e3e5e7] dark:bg-[#292E34] dark:text-white tracking-wide
-
+  h1, h2, h3, h4 { @apply font-bold; }
+  h1 { @apply text-3xl lg:text-5xl tracking-tight leading-tight; }
+  h2 { @apply text-2xl lg:text-4xl tracking-tight; }
+  h3 { @apply text-xl lg:text-2xl; }
+  h4 { @apply text-lg lg:text-xl; }
+  h5 { @apply text-base lg:text-lg font-medium my-4 leading-relaxed; }
+  p { @apply leading-relaxed; }
 }
 
-li {
-
-  @apply  hover:text-[#3671E9] ease-in duration-300
-}
-
-h1,h2,h3,h4 {
-  @apply font-bold
-}
-
-h1{
-  @apply text-4xl tracking-wide 
-}
-
-h2{
-  @apply text-3xl tracking-wide 
-
-}
-
-h3{
-  @apply text-2xl tracking-wide 
-
-}
-
-h4{
-  @apply text-xl tracking-wide 
-
-}
-
-h5{
-  @apply text-lg font-medium my-4 tracking-wide 
-}
-}
-
-
+.text-muted { color: var(--ink-muted); }
+.text-accent { color: var(--accent); }

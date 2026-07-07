@@ -1,0 +1,97 @@
+/*
+ * Design tokens — the style branches (frosted-glass / glassmorphism)
+ * swap ONLY this file (plus components/BackgroundDecor.tsx).
+ * Neutral base: clean corporate, solid surfaces, modest radius.
+ */
+:root {
+--canvas: #f6f8fb;
+--surface: #ffffff;
+--surface-border: rgba(16, 24, 40, 0.08);
+--surface-shadow: 0 4px 20px rgba(16, 24, 40, 0.06);
+--surface-shadow-hover: 0 12px 32px rgba(16, 24, 40, 0.12);
+--glass-filter: none;
+--ink: #101828;
+--ink-muted: #5d6b82;
+--accent: #2563eb;
+--pop-gradient: linear-gradient(120deg, #2563eb 0%, #1e40af 100%);
+--pop-gradient-hover: linear-gradient(120deg, #3b82f6 0%, #2563eb 100%);
+--pop-shadow: 0 8px 20px -8px rgba(37, 99, 235, 0.6);
+--cta-band: linear-gradient(120deg, rgba(37, 99, 235, 0.92), rgba(30, 64, 175, 0.92));
+--cta-border: none;
+--nav-bg: rgba(255, 255, 255, 0.85);
+--radius: 8px;
+}
+
+.dark {
+--canvas: #0f1420;
+--surface: #161d2e;
+--surface-border: rgba(255, 255, 255, 0.08);
+--surface-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+--surface-shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.5);
+--ink: #e8ecf4;
+--ink-muted: #9aa5b8;
+--nav-bg: rgba(22, 29, 46, 0.85);
+}
+
+.glass {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  box-shadow: var(--surface-shadow);
+  backdrop-filter: var(--glass-filter);
+  -webkit-backdrop-filter: var(--glass-filter);
+  border-radius: var(--radius);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.glass-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--surface-shadow-hover);
+}
+.btn {
+  border-radius: var(--radius);
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.btn-pop {
+  background-image: var(--pop-gradient);
+  color: #ffffff;
+  box-shadow: var(--pop-shadow);
+}
+.btn-pop:hover {
+  background-image: var(--pop-gradient-hover);
+  transform: translateY(-1px);
+}
+.btn-ghost {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+.btn-ghost:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+.nav-glass {
+  background: var(--nav-bg);
+  backdrop-filter: blur(14px) saturate(160%);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  border-bottom: 1px solid var(--surface-border);
+}
+.field {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius);
+  padding: 0.65rem 0.9rem;
+  color: var(--ink);
+  width: 100%;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.field:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+}

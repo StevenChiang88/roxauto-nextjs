@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rox Auto Parts — Company Website (Next.js)
 
-## Getting Started
+Marketing site for ROX International Corporation, a Taiwanese auto-parts trading company (since 1976). Statically pre-rendered (SSG) with full i18n routing — every page ships complete HTML for SEO.
 
-First, run the development server:
+## Tech stack
+
+- Next.js 15 (pages router, SSG) + TypeScript (strict)
+- Tailwind CSS (single styling system; UI hand-rolled, no component library)
+- next-i18next (English / Español via /es routes)
+- next-themes (light/dark, persisted, system-aware)
+- Swiper 11, EmailJS
+
+Node >= 20.9 (`.nvmrc` = 22).
+
+## Development
 
 ```bash
+nvm use
+npm install
+cp .env.example .env.local   # fill in EmailJS credentials
 npm run dev
-# or
-yarn dev
+npm run build                # typecheck + SSG build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Branches & deployment (Vercel)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- `style/frosted-glass` — airy frosted-glass look: pastel backdrop, translucent blurred white surfaces
+- `style/glassmorphism` — dark-first glassmorphism: vivid gradient mesh, glass cards, neon accents
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Both share the same layout/components; the look is driven by `styles/theme.css` + `components/BackgroundDecor.tsx`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+On Vercel every pushed branch gets its own Preview Deployment URL for side-by-side review. After choosing one, merge it into `main` and update `SITE_URL` in `lib/site.ts` plus `public/robots.txt` / `public/sitemap.xml` if the domain changes. Remember to set the three `NEXT_PUBLIC_EMAIL_*` env vars in Vercel.
 
-## Learn More
+## SEO
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Per-page title/description/canonical/Open Graph, hreflang alternates (en/es), JSON-LD Organization schema, `sitemap.xml`, `robots.txt`, lowercase routes with 301s from the old capitalized URLs.
