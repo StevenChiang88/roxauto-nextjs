@@ -10,7 +10,7 @@ import "../styles/theme.css";
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system">
+    <ThemeProvider attribute="class" defaultTheme="dark">
       <div className="font-sans">
         <BackgroundDecor />
         <Navbar />

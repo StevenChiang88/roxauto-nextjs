@@ -1,36 +1,47 @@
 /*
- * Design tokens — the style branches (frosted-glass / glassmorphism)
- * swap ONLY this file (plus components/BackgroundDecor.tsx).
- * Neutral base: clean corporate, solid surfaces, modest radius.
+ * Glassmorphism — dark-first. Vivid gradient mesh behind translucent
+ * glass cards with visible blur and inner light edge. CTAs pop in hot
+ * amber-orange against the navy/cyan/violet backdrop.
  */
 :root {
---canvas: #f6f8fb;
---surface: #ffffff;
---surface-border: rgba(16, 24, 40, 0.08);
---surface-shadow: 0 4px 20px rgba(16, 24, 40, 0.06);
---surface-shadow-hover: 0 12px 32px rgba(16, 24, 40, 0.12);
---glass-filter: none;
---ink: #101828;
---ink-muted: #5d6b82;
---accent: #2563eb;
---pop-gradient: linear-gradient(120deg, #2563eb 0%, #1e40af 100%);
---pop-gradient-hover: linear-gradient(120deg, #3b82f6 0%, #2563eb 100%);
---pop-shadow: 0 8px 20px -8px rgba(37, 99, 235, 0.6);
---cta-band: linear-gradient(120deg, rgba(37, 99, 235, 0.92), rgba(30, 64, 175, 0.92));
---cta-border: none;
---nav-bg: rgba(255, 255, 255, 0.85);
---radius: 8px;
+  --canvas: #edf0fa;
+  --surface: rgba(255, 255, 255, 0.45);
+  --surface-border: rgba(255, 255, 255, 0.75);
+  --surface-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 8px 32px rgba(22, 27, 51, 0.12);
+  --surface-shadow-hover: inset 0 1px 0 rgba(255, 255, 255, 0.9), 0 14px 44px rgba(22, 27, 51, 0.18);
+  --glass-filter: blur(20px);
+  --ink: #161b33;
+  --ink-muted: #4e5878;
+  --accent: #0e7490;
+  --pop-gradient: linear-gradient(120deg, #fbbf24 0%, #f97316 100%);
+  --pop-gradient-hover: linear-gradient(120deg, #fcd34d 0%, #fb8c3c 100%);
+  --pop-shadow: 0 8px 28px -10px rgba(249, 115, 22, 0.8);
+  --cta-band: linear-gradient(120deg, rgba(34, 211, 238, 0.5) 0%, rgba(139, 92, 246, 0.6) 100%);
+  --cta-border: 1px solid rgba(255, 255, 255, 0.25);
+  --nav-bg: rgba(255, 255, 255, 0.5);
+  --radius: 12px;
+  --decor-base: linear-gradient(180deg, #f0f3fc 0%, #e5eaf9 100%);
+  --blob-1: rgba(167, 139, 250, 0.65);
+  --blob-2: rgba(103, 232, 249, 0.7);
+  --blob-3: rgba(249, 168, 212, 0.6);
+  --blob-4: rgba(167, 139, 250, 0.55);
 }
 
 .dark {
---canvas: #0f1420;
---surface: #161d2e;
---surface-border: rgba(255, 255, 255, 0.08);
---surface-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
---surface-shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.5);
---ink: #e8ecf4;
---ink-muted: #9aa5b8;
---nav-bg: rgba(22, 29, 46, 0.85);
+  --canvas: #0b1026;
+  --surface: rgba(255, 255, 255, 0.09);
+  --surface-border: rgba(255, 255, 255, 0.18);
+  --surface-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 8px 32px rgba(2, 6, 23, 0.35);
+  --surface-shadow-hover: inset 0 1px 0 rgba(255, 255, 255, 0.14), 0 14px 44px rgba(2, 6, 23, 0.5), 0 0 28px rgba(34, 211, 238, 0.15);
+  --ink: #eaecff;
+  --ink-muted: #a3accf;
+  --accent: #22d3ee;
+  --nav-bg: rgba(11, 16, 38, 0.5);
+  --decor-base: radial-gradient(ellipse at 30% 0%, #141b3c 0%, #0b1026 55%);
+  --blob-1: rgba(124, 58, 237, 0.55);
+  --blob-2: rgba(6, 182, 212, 0.45);
+  --blob-3: rgba(219, 39, 119, 0.38);
+  --blob-4: rgba(124, 58, 237, 0.45);
 }
 
 .glass {
@@ -44,11 +55,12 @@
 }
 .glass-hover:hover {
   transform: translateY(-4px);
+  border-color: rgba(34, 211, 238, 0.5);
   box-shadow: var(--surface-shadow-hover);
 }
 .btn {
   border-radius: var(--radius);
-  padding: 0.6rem 1.5rem;
+  padding: 0.65rem 1.5rem;
   font-weight: 600;
   font-size: 0.9rem;
   transition: all 0.25s ease;
@@ -67,28 +79,33 @@
   transform: translateY(-1px);
 }
 .btn-ghost {
-  border: 1px solid var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
   color: var(--accent);
-  background: transparent;
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .btn-ghost:hover {
   background: var(--accent);
-  color: #ffffff;
+  color: #0b1026;
 }
 .nav-glass {
   background: var(--nav-bg);
-  backdrop-filter: blur(14px) saturate(160%);
-  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
   border-bottom: 1px solid var(--surface-border);
 }
 .field {
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.35);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius);
   padding: 0.65rem 0.9rem;
   color: var(--ink);
   width: 100%;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.dark .field {
+  background: rgba(255, 255, 255, 0.07);
 }
 .field:focus {
   outline: none;
