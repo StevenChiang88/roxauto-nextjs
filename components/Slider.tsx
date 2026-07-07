@@ -15,24 +15,25 @@ interface SliderProps {
 
 export default function Slider({ data }: SliderProps) {
   return (
-    <Swiper
-      modules={[Autoplay, Pagination]}
-      autoplay={{ delay: 5000, disableOnInteraction: false }}
-      pagination={{ clickable: true }}
-      className="overflow-hidden"
-      style={{ borderRadius: "var(--radius)" }}
-    >
-      {data.map((item) => (
-        <SwiperSlide key={item.link}>
-          <Image
-            className="h-auto w-full"
-            width={1000}
-            height={640}
-            src={`/static/images/${item.link}`}
-            alt={item.alt}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="w-full min-w-0 max-w-full overflow-hidden" style={{ borderRadius: "var(--radius)" }}>
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        className="w-full"
+      >
+        {data.map((item) => (
+          <SwiperSlide key={item.link}>
+            <Image
+              className="h-auto w-full"
+              width={1000}
+              height={640}
+              src={`/static/images/${item.link}`}
+              alt={item.alt}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }

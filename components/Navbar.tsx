@@ -93,7 +93,7 @@ export default function Navbar() {
             </span>
           </div>
           <div className="mt-4">
-            <LanguageMenu />
+            <LanguageMenu dropUp />
           </div>
         </div>
       </div>
