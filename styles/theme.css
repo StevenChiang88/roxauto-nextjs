@@ -1,36 +1,46 @@
 /*
- * Design tokens — the style branches (frosted-glass / glassmorphism)
- * swap ONLY this file (plus components/BackgroundDecor.tsx).
- * Neutral base: clean corporate, solid surfaces, modest radius.
+ * Frosted Glass — airy, macOS-like. Soft pastel canvas behind
+ * translucent white surfaces with heavy blur and hairline light borders.
+ * CTAs pop in warm coral-orange against the cool blue/white palette.
  */
 :root {
---canvas: #f6f8fb;
---surface: #ffffff;
---surface-border: rgba(16, 24, 40, 0.08);
---surface-shadow: 0 4px 20px rgba(16, 24, 40, 0.06);
---surface-shadow-hover: 0 12px 32px rgba(16, 24, 40, 0.12);
---glass-filter: none;
---ink: #101828;
---ink-muted: #5d6b82;
---accent: #2563eb;
---pop-gradient: linear-gradient(120deg, #2563eb 0%, #1e40af 100%);
---pop-gradient-hover: linear-gradient(120deg, #3b82f6 0%, #2563eb 100%);
---pop-shadow: 0 8px 20px -8px rgba(37, 99, 235, 0.6);
---cta-band: linear-gradient(120deg, rgba(37, 99, 235, 0.92), rgba(30, 64, 175, 0.92));
---cta-border: none;
---nav-bg: rgba(255, 255, 255, 0.85);
---radius: 8px;
+  --canvas: #eef2f7;
+  --surface: rgba(255, 255, 255, 0.45);
+  --surface-border: rgba(255, 255, 255, 0.75);
+  --surface-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 8px 32px rgba(28, 36, 52, 0.1);
+  --surface-shadow-hover: inset 0 1px 0 rgba(255, 255, 255, 0.85), 0 14px 44px rgba(28, 36, 52, 0.16);
+  --glass-filter: blur(24px) saturate(180%);
+  --ink: #1c2434;
+  --ink-muted: #5a6b85;
+  --accent: #3b82f6;
+  --pop-gradient: linear-gradient(120deg, #ff8a3d 0%, #f4511e 100%);
+  --pop-gradient-hover: linear-gradient(120deg, #ff9a55 0%, #ff5c2b 100%);
+  --pop-shadow: 0 8px 24px -10px rgba(244, 81, 30, 0.75);
+  --cta-band: linear-gradient(120deg, rgba(37, 99, 235, 0.82) 0%, rgba(59, 130, 246, 0.72) 100%);
+  --cta-border: 1px solid rgba(255, 255, 255, 0.4);
+  --nav-bg: rgba(255, 255, 255, 0.55);
+  --radius: 10px;
+  --decor-base: linear-gradient(180deg, #f2f6fb 0%, #e7eef9 100%);
+  --blob-1: rgba(96, 165, 250, 0.75);
+  --blob-2: rgba(125, 211, 252, 0.8);
+  --blob-3: rgba(165, 180, 252, 0.7);
+  --blob-4: rgba(147, 197, 253, 0.65);
 }
 
 .dark {
---canvas: #0f1420;
---surface: #161d2e;
---surface-border: rgba(255, 255, 255, 0.08);
---surface-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
---surface-shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.5);
---ink: #e8ecf4;
---ink-muted: #9aa5b8;
---nav-bg: rgba(22, 29, 46, 0.85);
+  --canvas: #10141c;
+  --surface: rgba(24, 31, 44, 0.5);
+  --surface-border: rgba(255, 255, 255, 0.14);
+  --surface-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 8px 32px rgba(0, 0, 0, 0.35);
+  --surface-shadow-hover: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 14px 44px rgba(0, 0, 0, 0.5);
+  --ink: #edf1f7;
+  --ink-muted: #9fa9bc;
+  --nav-bg: rgba(16, 20, 28, 0.6);
+  --decor-base: linear-gradient(180deg, #10141c 0%, #131926 100%);
+  --blob-1: rgba(59, 130, 246, 0.3);
+  --blob-2: rgba(14, 165, 233, 0.24);
+  --blob-3: rgba(99, 102, 241, 0.24);
+  --blob-4: rgba(59, 130, 246, 0.2);
 }
 
 .glass {
@@ -69,7 +79,9 @@
 .btn-ghost {
   border: 1px solid var(--accent);
   color: var(--accent);
-  background: transparent;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .btn-ghost:hover {
   background: var(--accent);
@@ -77,18 +89,21 @@
 }
 .nav-glass {
   background: var(--nav-bg);
-  backdrop-filter: blur(14px) saturate(160%);
-  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border-bottom: 1px solid var(--surface-border);
 }
 .field {
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.4);
   border: 1px solid var(--surface-border);
   border-radius: var(--radius);
   padding: 0.65rem 0.9rem;
   color: var(--ink);
   width: 100%;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.dark .field {
+  background: rgba(255, 255, 255, 0.06);
 }
 .field:focus {
   outline: none;
