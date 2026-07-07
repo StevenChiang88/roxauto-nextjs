@@ -25,7 +25,7 @@ export default function BrandSlider({ brandName, sliderData }: BrandSliderProps)
           <p className="text-muted mt-2">{t(`BrandsBox.${brandName}`)}</p>
         </div>
       </article>
-      <div className="self-center lg:px-10">
+      <div className="min-w-0 w-full self-center lg:px-10">
         <Slider data={sliderData} />
       </div>
     </div>

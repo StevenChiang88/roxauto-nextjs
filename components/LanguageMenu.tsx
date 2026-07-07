@@ -6,8 +6,13 @@ const LANGUAGES = [
   { code: "es", label: "Español" },
 ];
 
+interface LanguageMenuProps {
+  /** Open the list upward (for placements near the bottom of the screen). */
+  dropUp?: boolean;
+}
+
 /** Hand-rolled locale dropdown — keeps the current page when switching. */
-export default function LanguageMenu() {
+export default function LanguageMenu({ dropUp = false }: LanguageMenuProps) {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -23,7 +28,7 @@ export default function LanguageMenu() {
   const current = LANGUAGES.find((l) => l.code === router.locale) ?? LANGUAGES[0];
 
   return (
-    <div ref={ref} className="relative text-base normal-case">
+    <div ref={ref} className="relative inline-block text-base normal-case">
       <button
         aria-haspopup="listbox"
         aria-expanded={open}
@@ -33,7 +38,17 @@ export default function LanguageMenu() {
         {current.label}
       </button>
       {open && (
-        <ul role="listbox" className="glass absolute right-0 mt-2 w-32 overflow-hidden py-1 z-50">
+        <ul
+          role="listbox"
+          className={`absolute left-0 z-50 w-36 overflow-hidden py-1 shadow-xl ${
+            dropUp ? "bottom-full mb-2" : "top-full mt-2"
+          }`}
+          style={{
+            background: "var(--canvas)",
+            border: "1px solid var(--surface-border)",
+            borderRadius: "var(--radius)",
+          }}
+        >
           {LANGUAGES.map((lng) => (
             <li key={lng.code}>
               <button

@@ -26,7 +26,7 @@ export default function HomeHero() {
             <CtaButton href="/products" variant="pop-alt">{t("generalButton.Products")}</CtaButton>
           </div>
         </div>
-        <div className="w-full self-center lg:w-[45%]">
+        <div className="w-full min-w-0 self-center lg:w-[45%]">
           <Slider data={HOME_SLIDES} />
         </div>
       </div>
