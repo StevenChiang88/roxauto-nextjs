@@ -19,36 +19,38 @@ export default function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <header className="nav-glass sticky top-0 z-[100] w-full">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4">
-        <Link href="/" aria-label="Rox Auto Parts home" className="transition-opacity duration-200 hover:opacity-75">
-          <Image src="/static/images/roxicon.png" alt="Rox Auto Parts logo" width={125} height={50} priority />
-        </Link>
+    <>
+      <header className="nav-glass sticky top-0 z-[100] w-full">
+        <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4">
+          <Link href="/" aria-label="Rox Auto Parts home" className="transition-opacity duration-200 hover:opacity-75">
+            <Image src="/static/images/roxicon.png" alt="Rox Auto Parts logo" width={125} height={50} priority />
+          </Link>
 
-        <nav className="hidden items-center gap-2 font-semibold lg:flex">
-          {NAV_ITEMS.map((item) => (
-            <Link key={item.href} href={item.href} className="nav-link">
-              {t(item.key)}
-            </Link>
-          ))}
-          <span className="nav-link cursor-pointer">
-            <ThemeToggle />
-          </span>
-          <LanguageMenu />
-        </nav>
+          <nav className="hidden items-center gap-2 font-semibold lg:flex">
+            {NAV_ITEMS.map((item) => (
+              <Link key={item.href} href={item.href} className="nav-link">
+                {t(item.key)}
+              </Link>
+            ))}
+            <span className="nav-link cursor-pointer">
+              <ThemeToggle />
+            </span>
+            <LanguageMenu />
+          </nav>
 
-        <button
-          aria-label="open menu"
-          onClick={() => setNavOpen(true)}
-          className="nav-link cursor-pointer lg:hidden"
-        >
-          <AiOutlineMenu size={25} />
-        </button>
-      </div>
+          <button
+            aria-label="open menu"
+            onClick={() => setNavOpen(true)}
+            className="nav-link cursor-pointer lg:hidden"
+          >
+            <AiOutlineMenu size={25} />
+          </button>
+        </div>
+      </header>
 
-      {/* mobile drawer: black mask + solid panel sliding in from the right */}
+      {/* mobile drawer lives OUTSIDE the blurred header (backdrop-filter breaks position:fixed inside it) */}
       <div
-        className={`fixed inset-0 z-[110] bg-black/60 transition-opacity duration-300 lg:hidden ${
+        className={`fixed inset-0 z-[110] bg-black/80 transition-opacity duration-300 lg:hidden ${
           navOpen ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
         onClick={() => setNavOpen(false)}
@@ -70,12 +72,7 @@ export default function Navbar() {
 
           <nav className="mt-10 flex flex-col gap-2 text-lg font-semibold">
             {NAV_ITEMS.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setNavOpen(false)}
-                className="nav-link"
-              >
+              <Link key={item.href} href={item.href} onClick={() => setNavOpen(false)} className="nav-link">
                 {t(item.key)}
               </Link>
             ))}
@@ -100,6 +97,6 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }
