@@ -20,3 +20,14 @@
 
 .text-muted { color: var(--ink-muted); }
 .text-accent { color: var(--accent); }
+
+/* navbar link hover */
+.nav-link {
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+.nav-link:hover {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
