@@ -63,14 +63,25 @@ export default function Navbar() {
           }`}
           style={{ background: "var(--canvas)" }}
         >
-          <div className="flex items-center justify-between">
-            <Image src="/static/images/roxicon.png" alt="Rox Auto Parts logo" width={100} height={40} />
+          <div className="flex justify-end">
             <button aria-label="close menu" className="nav-link" onClick={() => setNavOpen(false)}>
               <AiOutlineClose size={22} />
             </button>
           </div>
 
-          <nav className="mt-10 flex flex-col gap-2 text-lg font-semibold">
+          <div className="mt-2 flex items-center justify-between">
+            <Image src="/static/images/roxicon.png" alt="Rox Auto Parts logo" width={100} height={40} />
+            <LanguageMenu />
+          </div>
+
+          <p
+            className="text-muted mt-6 border-b pb-4 font-medium"
+            style={{ borderColor: "var(--surface-border)" }}
+          >
+            Experienced and reliable partner
+          </p>
+
+          <nav className="mt-6 flex flex-col gap-2 text-lg font-semibold">
             {NAV_ITEMS.map((item) => (
               <Link key={item.href} href={item.href} onClick={() => setNavOpen(false)} className="nav-link">
                 {t(item.key)}
@@ -91,9 +102,6 @@ export default function Navbar() {
             <span className="nav-link">
               <ThemeToggle />
             </span>
-          </div>
-          <div className="mt-4">
-            <LanguageMenu dropUp />
           </div>
         </div>
       </div>
